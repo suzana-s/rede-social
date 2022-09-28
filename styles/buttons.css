@@ -1,0 +1,35 @@
+.button {
+    border-radius: var(--radius-1);
+    cursor: pointer;
+    font-size: var(--size-button);
+    font-weight: var(--font-wheigth);
+    border: 1px solid var(--color-grey-1);
+}
+
+.blue {
+    background-color: #4263EB;
+    color: var(--color-white-fixed);
+    border: none;
+}
+
+.button-min {
+    height: max-content;
+    width: 65px;
+    border-radius: 2px;
+    border: 1px solid var(--color-grey-1);
+    color: var(--color-grey-1);
+    font-size: var(--size-button-2);
+    font-weight: var(--font-wheigth);
+    cursor: pointer;
+}
+
+.b-padding {
+    padding: 0px 12px 0px 12px;
+    cursor: pointer;
+}
+
+.b-black {
+    background-color: var(--color-grey-1);
+    color: var(--color-white-fixed);
+}
+

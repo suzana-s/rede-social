@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/globalStyles.css"/>
+    <link rel="stylesheet" href="pages/home/style.css" />
+    <link rel="stylesheet" href="styles/flex.css">
+    <link rel="stylesheet" href="styles/posts.css">
+    <link rel="stylesheet" href="styles/input.css">
+    <link rel="stylesheet" href="styles/buttons.css">
+    <link rel="stylesheet" href="styles/posts.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="styles/desktop.css">
+    <title>TechPosters - Home</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="flex justify-content align-items">
+          <h1>TechPosters</h1>
+          <button>sair</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="desktop-flex">
+          <section class="post">
+            <div class="flex">
+              <img src="assets/img/user1.svg" alt="foto do samuel leão">
+              <div>
+                <h2 class="title">Samuel Leão</h2>
+                <span>Front end Engineer<span>
+              </div>
+            </div>
+            <form class="flex column align-items-end">
+              <input type="text" placeholder="Digitar título do post" class="input input-font borders">
+              <input type="text" placeholder="Digitar descrição di post" class="text-area input-font borders"></input>
+              <button class="b-pading">Postar</button>
+            </form>
+          </section>
+          <aside class="follow">
+            <h2 class="title">Sugestões para você seguir</h2>
+            <div>
+              <ul class="flex gap">
+                <li >
+                  <div class="flex ">
+                    <img src="assets/img/user2.svg" alt="Foto Carlos Lima" class="img">
+                    <div>
+                      <h2 class="title">Carlos Lima</h2>
+                      <span class="span">UX e UI Desginer</span>
+                    </div>
+                  </div>
+                  <button class="b-padding button">seguir</button>
+                </li>
+                <li>
+                  <div class="flex">
+                    <img src="assets/img/user3.svg" alt="" class="img">
+                    <div>     
+                      <h2 class="title">Carlos Lima</h2>
+                      <span class="span">UX e UI Desginer</span>
+                    </div>
+                  </div>
+                  <button class="b-padding button">seguir</button>
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+        <section class="post-cards">
+          <h2>Post</h2>
+          <ul>
+            <li>
+              <div class="flex gap">
+                <img src="assets/img/user1.svg" alt="" class="img">
+                <div>
+                  <h2 class="title">Samuel Persuhn</h2>
+                  <span class="span">Front end Engineer</span>
+                </div>
+              </div>
+              <div class="p-margin">
+                <p class="paragraph-big">Empresa de Tecnologia da Informação abre vagas para programa de estágio</p>
+                <p class="span">A Framework Digital, empresa mineira especializada em Tecnologia da Informação, irá iniciar o seu sexto programa de estágio, com o prazo de inscrições entre os dias 08 e 28 de agosto. O programa é ...</p>
+              </div>
+              <div class="flex align-items">
+                <button class="b-padding b-black" data-modal-control="post" id="1">Abrir post</button>
+                <img src="assets/img/Vector (2).png" alt="" class="iccon">
+                <span>25</span>
+              </div>
+            </li>
+            <li>
+              <div class="flex gap">
+                <img src="assets/img/user1.svg" alt="" class="img">
+                <div>
+                  <h2 class="title">Samuel Persuhn</h2>
+                  <span class="span">Front end Engineer</span>
+                </div>
+              </div>
+              <div class="p-margin">
+                <p class="paragraph-big">Programa de estágio abre vagas em Segurança da Informação com regime remoto</p>
+                <p class="span">Em Segurança da Informação, as vagas são destinadas às áreas de Security Operations Center (SOC), Administração de Dispositivos de Segurança (ADS), Resposta a Incidentes (RI), Segurança e Privacidade e Consultoria Técnica...</p>
+              </div>
+              <div class="flex align-items">
+                <button class="b-padding b-black" data-modal-control="post" id="2">Abrir post</button>
+                <img src="assets/img/Vector (2).png" alt="" class="iccon">
+                <span>25</span>
+              </div>
+            </li>
+            <li>
+              <div class="flex gap">
+                <img src="assets/img/user1.svg" alt="" class="img">
+                <div>
+                  <h2 class="title">Samuel Persuhn</h2>
+                  <span class="span">Front end Engineer</span>
+                </div>
+              </div>
+              <div class="p-margin">
+                <p class="paragraph-big">O que é programação orientada a objetos e programação funcional</p>
+                <p class="span">A Programação Funcional é uma orientação focada na programação declarativa. Conhecendo mais a programação funcional a partir de códigos podemos nos deparar de primeira com o conceito mais central...</p>
+              </div>
+              <div class="flex align-items">
+                <button class="b-padding b-black" data-modal-control="post" id="3">Abrir post</button>
+                <img src="assets/img/Vector (2).png" alt="" class="iccon">
+                <span>25</span>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <div class="modal-wrapper" id="post">
+      <div class="modal">
+        <!-- <div class="flex justify-content">
+          <div class="flex gap">
+            <img src="../../assets/img/user1.svg" class="img" alt="">
+            <div>
+              <h2 class="title">Samuel Leaos</h2>
+              <span class="span">Front end Engineer</span>
+            </div>
+          </div>
+          <button data-modal-control="post">X</button>
+        </div>
+        <p class="paragraph-big">Como criar um interface simples e agradável utilizando boas práticas de design</p>
+        <p class="span">
+          Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um design pronto feito por um profissional de UI design.
+        </p>  
+        <p class="span">
+          Antes de iniciar a criação de qualquer projeto, busque referências de aplicações que tenham a ver com o nicho que você está desenvolvendo. Por exemplo, quando quero criar um e-commerce de roupas, vou reservar um momento para buscar por aplicações do gênero, tanto acessando ou baixando apps e vendo o que se repete de informações em cada um dos aplicativos e sites referentes a compra de roupas, e também, observar cores que normalmente você enxerga em cada um dos apps.
+        </p> -->
+
+      </div>
+    </div>
+  </body>
+  <script src="script/database/users.js"></script>
+  <script src="script/database/posts.js"></script>
+  <script src="script/database/sugestUsers.js"></script>
+  <script src="pages/home/index.js"></script>
+</html>

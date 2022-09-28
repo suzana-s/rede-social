@@ -1,0 +1,21 @@
+.icons img{
+    width: 20.76px;
+}
+
+.post-cards ul li button {
+    height: 38px;
+    margin-right: 32px;
+}
+
+.post-cards ul li {
+    width: 100%;
+    margin: 50px 0px;
+}
+
+.post-cards ul li span {
+    margin-left: 7px;
+}
+
+.p-margin {
+    margin: 32px 0px;
+}

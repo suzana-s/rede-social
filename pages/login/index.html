@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/globalStyles.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../styles/input.css">
+    <link rel="stylesheet" href="../../styles/buttons.css">
+    <link rel="stylesheet" href="../../styles/text.css">
+    <title>TechPosters - Login</title>
+  </head>
+  <body>
+    <main>
+      <form>
+        <h1>Login</h1>
+        <input type="text" placeholder="Seu e-mail" class="input">
+        <input type="text" placeholder="Sua senha" class="input">
+        <a href="">
+          <button class="button blue">Logar</button>
+        </a>
+        <p class="paragraph">Ainda não possui cadastro</p>
+        <a href="../home/index.html" target="_blank">
+          <button class="button">Ir para página de registro</button>
+        </a>
+      </form>
+    </main>
+    <div class="modal-wrapper">
+      <div class="modal">
+        <h2>Acesso não autorizado</h2>
+          <p>
+            Essa conta não existe, logo não pode acessar a página dos posts
+          </p>
+          <button class="">Entendi</button>
+      </div>
+    </div>
+  </body>
+  <script src="/script/visualComponents/modal.js"></script>
+  <script src="/script/visualComponents/navbar.js"></script>
+  <script src="index.js"></script>
+</html>

@@ -1,0 +1,12 @@
+main {
+    height: 659px;
+    width: 461px;
+    border-radius: var(--radius-1);
+    padding: var(--pading-1);
+    margin: auto;
+}
+
+main h1 {
+   font-size: var(--size-title);
+   margin-bottom: 30px;
+}

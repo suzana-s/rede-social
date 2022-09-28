@@ -1,0 +1,44 @@
+@media(min-width: 900px){
+   
+
+    section {
+    width: 713px;
+   }
+
+
+   .follow {
+    margin-top: 200px;
+    width: 421px;
+    height: max-content;
+    padding: 10px;
+    position: sticky;
+    z-index: 0;
+    top: 10px;
+    left: 0;
+
+   }
+
+   .follow ul{
+    flex-direction: column;
+    padding: 0px;
+    gap: 61px;
+
+   }
+
+   .follow ul li {
+    display: flex;
+    justify-content: space-between;
+   }
+
+   .desktop-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 127px;
+   }
+
+   .modal {
+    width: 761px;
+    height: 684px;
+    overflow: auto;
+   }
+}

@@ -1,0 +1,32 @@
+.paragraph {
+    font-size: 0.75rem;
+    text-align: center;
+    margin: 20px;
+    font-weight: 400;
+}
+
+.paragraph:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.title {
+    font-weight: var(--font-wheigth-1);
+    color: var(--color-grey-1);
+    font-size: 1.25rem;
+}
+
+.span {
+    font-size: var(--size-2-);
+    color: var(--color-grey-2);
+    line-height: 28px;
+    margin-top: 8px;
+}
+
+.paragraph-big {
+    font-weight: 400;
+    font-size: 1.75rem;
+    color: var(--color-grey-1);
+}
+
+
